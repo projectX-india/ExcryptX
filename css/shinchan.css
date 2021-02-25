@@ -1,0 +1,1823 @@
+@charset "utf-8";
+/* ----------------------------------
+Name: Shinchan.css
+Author: Vaibhav Sharma  
+------------------------------------- */
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900);
+@import url(https://fonts.googleapis.com/css?family=Raleway:800,700,600,400,300,200,100); 
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,900); 
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+::selection {
+    background-color: #ececec;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+    font-family: 'Raleway', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-align: center;
+    font-size: 1em;
+}
+
+body {
+    overflow-x: hidden;
+}
+p{
+    color: white;
+}
+.container {
+    margin: 0px auto;
+    padding: 0px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    float: none;
+}
+
+img {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    user-drag: none;
+}
+
+a {
+    color: #191919;
+    text-decoration: none;
+    outline: none;
+}
+
+a:hover, a:active, a:focus {
+    text-decoration: none;
+    outline: none;
+    color: #505050;
+}
+
+a i:hover, a i:active, a i:focus {
+    text-decoration: none;
+    outline: none;
+    color: #505050;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    margin: 0px;
+    padding: 0px;
+}
+
+p {
+    margin: 0px;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.65;
+}
+
+.clear {
+    clear: both;
+}
+
+ol, ul {
+    list-style: none;
+    padding: 0;
+}
+
+.no-padding {
+    padding: 40px 200px 50px 200px  !important;
+}
+.padding {
+    padding: 10px 10px 10px 1px;
+}
+.no-margin {
+    margin: 0 !important;
+}
+
+.no-margin-top {
+    margin-top: 0 !important;
+}
+
+.no-margin-bottom {
+    margin-bottom: 0 !important;
+}
+
+.no-margin-left {
+    margin-left: 0 !important;
+}
+
+.no-margin-bottom {
+    margin-bottom: 0 !important;
+}
+
+.no-border {
+    border: none !important;
+    border-style: none !important;
+}
+
+.fullscreen {
+    width: 100%;
+    height: 100vh;
+    z-index: 99;
+    overflow: hidden;
+}
+
+/* Buttons
+-------------------------*/
+.button {
+    position: relative;
+    z-index: 5;
+    background: transparent;
+    cursor: pointer;
+    width: 120px;
+    height: 40px;
+    line-height: 30px;
+    border: none;
+    color: #c2c2c2;
+    border: 2px solid #777777;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+.button:hover {
+    background: #fff;
+    border: 2px solid #fff;
+    color: #191919;
+}
+
+/* Floats
+-------------------------*/
+.float-l {
+    float: left !important;
+}
+
+.float-r {
+    float: right !important;
+}
+
+/* Overlays
+-------------------------*/
+.overlay-black:after, .pattern-white:after, .overlay-dark:after, .overlay-light:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.overlay-black:after {
+    background: url(../img/pattern-1.png) repeat;
+}
+
+.overlay-dark:after {
+    background: #191919;
+    opacity: 0.96;
+}
+
+.overlay-light:after {
+    background: #000;
+    opacity: 0.6;
+}
+
+.overlay-slider:after {
+    background: #191919;
+    opacity: 0.92;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 2;
+}
+
+/* Row Fix
+-------------------------*/
+.row:before, .row:after {
+    content: "";
+    display: table ;
+    clear: both;
+}
+
+/* Section Styles
+
+-------------------------*/
+.section-title {
+    position: relative;
+    padding: 0px 0px 50px 10%;
+    color: #212121;
+    font-weight: 400;
+}
+
+.section-content {
+    padding: 0px 150px 0px 150px;
+    z-index: 9999;
+}
+
+.section-content-full {
+    padding: 0px 0% 0px 0%;
+    z-index: 9999;
+}
+
+.sections {
+    width: 100%;
+    z-index: 1;
+}
+
+/* Separators
+----------------------------*/
+.separator-small {
+    width: 40px;
+    height: 1px;
+    background: #505050 none repeat;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+.separator-right {
+    width: 40px;
+    height: 1px;
+    background: #505050 none repeat;
+    margin-top: 30px;
+    text-align: right;
+    float: right;
+    margin-bottom: 30px;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+.separator-center {
+    width: 40px;
+    height: 1px;
+    background: #505050 none repeat;
+    margin: 25px auto;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+.sponser{
+    padding: 34px 2px 10px 250px  !important;
+}
+.sponser img{
+    width:200px;
+}
+
+/*======================
+
+	02. Typography
+
+========================*/
+/* Font Classes
+-------------------------*/
+.raleway {
+    font-family: 'Raleway', sans-serif;
+}
+
+.lato {
+    font-family: 'Lato', sans-serif;
+}
+
+.numbers {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Font Positions
+-------------------------*/
+.t-left {
+    text-align: left !important;
+    
+}
+.pad{
+    padding-left: 2px;
+}
+.t-center {
+    text-align: center !important;
+}
+
+.t-right {
+    text-align: right !important;
+}
+
+/* Font Weight
+-------------------------*/
+.ultrabold {
+    font-weight: 900;
+}
+
+.extrabold {
+    font-weight: 800;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.semibold {
+    font-weight: 600;
+}
+
+.normal {
+    font-weight: 500;
+}
+
+.light {
+    font-weight: 300;
+}
+
+.lighter {
+    font-weight: 100;
+}
+
+/* Font Transformation
+-------------------------*/
+.italic {
+    font-style: italic;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.lowercase {
+    text-transform: lowercase;
+}
+
+/* Font Colors
+-------------------------*/
+.dark {
+    color: #191919;
+}
+
+.white {
+    color: #fff !important;
+}
+
+.gray1 {
+    color: #c2c2c2;
+}
+
+.gray2 {
+    color: #505050;
+}
+
+.colored {
+    color: #FF0000;
+}
+
+/* Font Sizes
+-------------------------*/
+.f-extra-small{
+    font-size: 12px;
+}
+.f-small {
+    font-size: 20px;
+}
+
+.f-normal {
+    font-size: 16px;
+}
+
+.f-semi-expanded {
+    font-size: 1.5em;
+}
+
+.f-medium {
+    font-size: 28px;
+}
+
+.f-expanded {
+    font-size: 2.5em;
+}
+
+.f-big {
+    font-size: 45px;
+}
+
+.f-large {
+    font-size: 3em;
+}
+
+.f-extra-expanded {
+    font-size: 6em;
+}
+
+.f-huge {
+    font-size: 6.5em;
+}
+
+/*======================
+
+	03. Loading Screen
+
+========================*/
+#loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+#loader {
+    display: block;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border-radius: 100%;
+    border: 0px solid transparent;
+    border-top-color: #fff;
+    -webkit-animation: spin 2s linear infinite;
+    /* Chrome, Opera 15+, Safari 5+ */
+    animation: spin 2s linear infinite;
+    /* Chrome, Firefox 16+, IE 10+, Opera */
+    z-index: 1001;
+    overflow: hidden;
+}
+
+/* Loader Logo
+-------------------------*/
+.loader-img img {
+    display: block;
+    position: absolute;
+    left: 46.5%;
+    bottom: 48%;
+    width: 100px;
+    height: auto;
+    z-index: 1002;
+}
+
+/* Loader Animation
+-------------------------*/
+#loader:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 100%;
+    border: 2px solid transparent;
+    border-top-color: #fff;
+    overflow: hidden;
+    -webkit-animation: spin 3s linear infinite;
+    /* Chrome, Opera 15+, Safari 5+ */
+    animation: spin 3s linear infinite;
+    /* Chrome, Firefox 16+, IE 10+, Opera */
+}
+
+#loader:after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 100%;
+    border: 0px solid transparent;
+    border-top-color: #fff;
+    overflow: hidden;
+    -webkit-animation: spin 1.5s linear infinite;
+    /* Chrome, Opera 15+, Safari 5+ */
+    animation: spin 1.5s linear infinite;
+    /* Chrome, Firefox 16+, IE 10+, Opera */
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(0deg);
+        /* IE 9 */
+        transform: rotate(0deg);
+        /* Firefox 16+, IE 10+, Opera */
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(360deg);
+        /* IE 9 */
+        transform: rotate(360deg);
+        /* Firefox 16+, IE 10+, Opera */
+    }
+}
+
+@keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(0deg);
+        /* IE 9 */
+        transform: rotate(0deg);
+        /* Firefox 16+, IE 10+, Opera */
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(360deg);
+        /* IE 9 */
+        transform: rotate(360deg);
+        /* Firefox 16+, IE 10+, Opera */
+    }
+}
+
+#loader-wrapper .loader-section {
+    position: fixed;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    background: url(../img/pattern-1.png) repeat;
+    color: black;
+    z-index: 1000;
+    -webkit-transform: translateX(0);
+    /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: translateX(0);
+    /* IE 9 */
+    transform: translateX(0);
+    /* Firefox 16+, IE 10+, Opera */
+}
+
+#loader-wrapper .loader-section.section-left {
+    left: 0;
+}
+
+#loader-wrapper .loader-section.section-right {
+    right: 0;
+}
+
+/* After Loading
+-------------------------*/
+.loaded #loader-wrapper .loader-section.section-left {
+    -webkit-transform: translateX(-100%);
+    /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: translateX(-100%);
+    /* IE 9 */
+    transform: translateX(-100%);
+    /* Firefox 16+, IE 10+, Opera */
+    -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+}
+
+.loaded #loader-wrapper .loader-section.section-right {
+    -webkit-transform: translateX(100%);
+    /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: translateX(100%);
+    /* IE 9 */
+    transform: translateX(100%);
+    /* Firefox 16+, IE 10+, Opera */
+    -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+}
+
+.loaded #loader {
+    opacity: 0;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.loaded #loader-wrapper {
+    visibility: hidden;
+    -webkit-transform: translateY(-100%);
+    /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: translateY(-100%);
+    /* IE 9 */
+    transform: translateY(-100%);
+    /* Firefox 16+, IE 10+, Opera */
+    -webkit-transition: all 0.3s 1s ease-out;
+    transition: all 0.3s 1s ease-out;
+}
+
+/*======================
+
+	04. Backgrounds
+
+========================*/
+/* Solid Backgrounds
+-------------------------*/
+.white-bg {
+    background-color: #fff !important;
+}
+
+.black-bg {
+    background-color: #000 !important;
+}
+
+.gray-bg {
+    background-color: #505050 !important;
+}
+
+.dark-bg {
+    background-color: #141414 !important;
+}
+
+.colored-bg-mauve {
+    background-color: #190061 !important;
+}
+
+.colored-bg-mauve-dark {
+    background-color: #0c0032 !important;
+}
+
+.solid-bg {
+    background: #232121;
+}
+
+/* Gradient Backgrounds
+-------------------------*/
+.gradient-1 {
+    background-image: linear-gradient(-225deg, #231557 0%, #44107A 29%, #FF1361 67%, #FFF800 100%);
+}
+
+.gradient-2 {
+    background-image: linear-gradient(-225deg, #FF057C 0%, #8D0B93 50%, #321575 100%);
+}
+
+.gradient-3 {
+    background-image: linear-gradient(-225deg, #FF057C 0%, #7C64D5 48%, #4CC3FF 100%);
+}
+
+.gradient-bg {
+    width: 100%;
+    background-size: cover;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    z-index: 1;
+}
+
+/* Video Backgrounds
+-------------------------*/
+#video {
+    width: 100px;
+    height: 100vh;
+    background-size: cover;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    z-index: 1;
+}
+
+/* Image Backgrounds
+-------------------------*/
+.image-bg {
+    background: url(../img/bg-01.jpg);
+}
+
+.image-bg-2 {
+    background: url(../img/bg-02.jpg);
+}
+
+.image-bg-3 {
+    background: url(../img/bg-03.jpg);
+}
+
+.image-bg-4 {
+    background: url(../img/bg-04.jpg);
+}
+
+.image-bg-5 {
+    background: url(../img/bg-05.jpg);
+}
+
+.image-bg-6 {
+    background: url(../img/bg-06.html);
+}
+
+.image-bg, .image-bg-2, .image-bg-3, .image-bg-4, .image-bg-5, .image-bg-6 {
+    width: 100%;
+    background-size: cover;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    z-index: 1;
+}
+
+/* Pattern Background
+-------------------------*/
+.pattern-1 {
+    background: url(../img/pattern.jpg);
+}
+
+.pattern-2 {
+    background: url(../img/pattern-2.jpg);
+}
+
+.pattern-3 {
+    background: url(../img/pattern-3.html);
+}
+
+.pattern-bg {
+    position: relative;
+    overflow: hidden;
+    background-repeat: repeat;
+    z-index: 1;
+}
+
+/* Youtube Background
+-------------------------*/
+#youtube {
+    width: 100%;
+    background-size: cover;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    z-index: 1;
+}
+
+/*======================
+
+	05. Navigations
+
+========================*/
+/* General
+-------------------------*/
+.navigation {
+    background: #111111;
+    z-index: 9;
+    padding: 0px 3% 0px 10%;
+    -webkit-box-shadow: 0 8px 6px -6px black;
+    -moz-box-shadow: 0 8px 6px -6px black;
+    box-shadow: 0 8px 6px -6px black;
+}
+
+.navbar-brand  {
+    width: 40px;
+    position: relative;
+    right: 18px;
+    top: 4px;
+}
+
+.nav {
+    float: right;
+}
+
+.nav li a {
+    margin-right: 10px;
+    color: #777777;
+}
+
+/* Bootstrap Fix
+-------------------------*/
+.nav > li > a:focus, .nav > li > a:hover {
+    text-decoration: none;
+    background-color: transparent;
+    color: #777777;
+}
+
+.nav .open > a, .nav .open > a:focus, .nav .open > a:hover {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.navbar-toggle {
+    border-radius: 0px;
+    border: 2px solid #777777;
+}
+
+.navbar-nav > li > .dropdown-menu {
+    border-radius: 0;
+}
+
+.icon-bar {
+    background: #777777;
+}
+
+.nav li a {
+    text-align: left;
+    color: #c2c2c2;
+    font-family: Lato;
+    font-size: 16px;
+}
+
+.uk-subnav > * > :focus, .uk-subnav > * > :hover {
+    color: #505050;
+    text-decoration: none;
+}
+
+.uk-subnav > .uk-active > * {
+    color: #191919;
+}
+
+/* Dropdown
+-------------------------*/
+.dropdown-menu {
+    background: #191919;
+}
+
+.dropdown-menu li {
+    margin-bottom: 15px;
+}
+
+.dropdown-menu li a {
+    color: #e5e5e5;
+}
+
+.dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+/*======================
+
+	06. Homepage
+
+========================*/
+.home {
+    width: 100%;
+    height: 100vh;
+    z-index: 99;
+    overflow: hidden;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 99;
+    text-align: center;
+}
+
+/* Homepage Titles
+----------------------------*/
+.title {
+    display: block;
+    max-width: 400px;
+    margin: auto;
+}
+
+.brand {
+    line-height: 0.9;
+}
+
+.semi-title {
+    word-spacing: 1px;
+    letter-spacing: 3px;
+    margin: 30px 0px 0px 0px;
+    line-height: 1.4;
+}
+
+.glitch {
+    color: red;
+    position: relative;
+}
+
+@keyframes noise-anim {
+    0% {
+        clip: rect(68px, 9999px, 33px, 0);
+    }
+
+    5% {
+        clip: rect(21px, 9999px, 12px, 0);
+    }
+
+    10% {
+        clip: rect(31px, 9999px, 79px, 0);
+    }
+
+    15% {
+        clip: rect(79px, 9999px, 54px, 0);
+    }
+
+    20% {
+        clip: rect(12px, 9999px, 36px, 0);
+    }
+
+    25% {
+        clip: rect(13px, 9999px, 21px, 0);
+    }
+
+    30% {
+        clip: rect(9px, 9999px, 92px, 0);
+    }
+
+    35% {
+        clip: rect(31px, 9999px, 17px, 0);
+    }
+
+    40% {
+        clip: rect(89px, 9999px, 87px, 0);
+    }
+
+    45% {
+        clip: rect(56px, 9999px, 89px, 0);
+    }
+
+    50% {
+        clip: rect(100px, 9999px, 32px, 0);
+    }
+
+    55% {
+        clip: rect(91px, 9999px, 92px, 0);
+    }
+
+    60% {
+        clip: rect(93px, 9999px, 23px, 0);
+    }
+
+    65% {
+        clip: rect(11px, 9999px, 52px, 0);
+    }
+
+    70% {
+        clip: rect(79px, 9999px, 41px, 0);
+    }
+
+    75% {
+        clip: rect(13px, 9999px, 32px, 0);
+    }
+
+    80% {
+        clip: rect(58px, 9999px, 98px, 0);
+    }
+
+    85% {
+        clip: rect(41px, 9999px, 66px, 0);
+    }
+
+    90% {
+        clip: rect(5px, 9999px, 48px, 0);
+    }
+
+    95% {
+        clip: rect(90px, 9999px, 94px, 0);
+    }
+
+    100% {
+        clip: rect(98px, 9999px, 22px, 0);
+    }
+}
+
+.glitch:after {
+    content: attr(data-text);
+    position: absolute;
+    left: 2px;
+    text-shadow: -1px 0 red;
+    top: 0;
+    color: white;
+    background: transparent;
+    overflow: hidden;
+    clip: rect(0, 900px, 0, 0);
+    animation: noise-anim 2s infinite linear alternate-reverse;
+}
+
+@keyframes noise-anim-2 {
+    0% {
+        clip: rect(60px, 9999px, 47px, 0);
+    }
+
+    5% {
+        clip: rect(7px, 9999px, 65px, 0);
+    }
+
+    10% {
+        clip: rect(2px, 9999px, 64px, 0);
+    }
+
+    15% {
+        clip: rect(83px, 9999px, 44px, 0);
+    }
+
+    20% {
+        clip: rect(79px, 9999px, 14px, 0);
+    }
+
+    25% {
+        clip: rect(45px, 9999px, 23px, 0);
+    }
+
+    30% {
+        clip: rect(79px, 9999px, 47px, 0);
+    }
+
+    35% {
+        clip: rect(10px, 9999px, 46px, 0);
+    }
+
+    40% {
+        clip: rect(74px, 9999px, 49px, 0);
+    }
+
+    45% {
+        clip: rect(47px, 9999px, 23px, 0);
+    }
+
+    50% {
+        clip: rect(58px, 9999px, 15px, 0);
+    }
+
+    55% {
+        clip: rect(61px, 9999px, 81px, 0);
+    }
+
+    60% {
+        clip: rect(76px, 9999px, 7px, 0);
+    }
+
+    65% {
+        clip: rect(69px, 9999px, 57px, 0);
+    }
+
+    70% {
+        clip: rect(93px, 9999px, 63px, 0);
+    }
+
+    75% {
+        clip: rect(22px, 9999px, 54px, 0);
+    }
+
+    80% {
+        clip: rect(49px, 9999px, 43px, 0);
+    }
+
+    85% {
+        clip: rect(87px, 9999px, 98px, 0);
+    }
+
+    90% {
+        clip: rect(50px, 9999px, 20px, 0);
+    }
+
+    95% {
+        clip: rect(100px, 9999px, 49px, 0);
+    }
+
+    100% {
+        clip: rect(60px, 9999px, 10px, 0);
+    }
+}
+
+.glitch:before {
+    content: attr(data-text);
+    position: absolute;
+    left: -2px;
+    text-shadow: 1px 0 blue;
+    top: 0;
+    color: white;
+    background: transparent;
+    overflow: hidden;
+    clip: rect(0, 900px, 0, 0);
+    animation: noise-anim-2 3s infinite linear alternate-reverse;
+}
+
+/* Countdown Styles
+----------------------------*/
+.styled div {
+    display: inline-block;
+    margin: 30px 30px 0px 30px;
+    font-size: 2em;
+    font-weight: 900;
+}
+
+.styled div span {
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    color: #c2c2c2;
+    text-transform: capitalize;
+}
+
+/* Logo Styles
+----------------------------*/
+.logo {
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    z-index: 9;
+}
+
+.logo-footer {
+    max-width: 40px;
+    height: auto;
+}
+
+.logo-nav {
+    float: left;
+    max-width: 60px;
+    position: relative;
+    bottom: 10px;
+}
+
+/*========================
+
+	08. Services
+
+==========================*/
+#services {
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 150px;
+}
+
+.service:hover .separator-small {
+    width: 70px;
+}
+
+.service {
+    text-align: left;
+}
+
+.service i {
+    line-height: 0px;
+}
+
+
+.service h2 {
+    margin: 15px 0px 0px 9px;
+    padding: 10px 0px 10px 9px;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+  
+    text-align: left;
+}
+
+/*========================
+
+	09. Sliders
+
+==========================*/
+.rslides {
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+.rslides li {
+    -webkit-backface-visibility: hidden;
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+.rslides li:first-child {
+    position: relative;
+    display: block;
+    float: left;
+}
+
+.rslides img {
+    display: block;
+    float: left;
+    width: 100%;
+    height: auto;
+    border: 0;
+}
+
+/*========================
+
+	10. About
+
+==========================*/
+#about {
+    position: relative;
+}
+
+.about-description {
+    padding: 150px 0px 150px 0px;
+}
+
+.about-description p {
+    line-height: 1.65;
+}
+
+.about-quote {
+    margin: 30px 0px 30px 0px;
+    line-height: 1.1;
+}
+
+/*========================
+
+	11. Subscribe
+
+==========================*/
+#subscribe {
+    position: relative;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.subscribe-form {
+    position: relative;
+    margin-top: 30px;
+    z-index: 3;
+}
+
+.subscribe-form input {
+    box-sizing: border-box;
+    padding-bottom: 5px;
+    transition: none;
+    background: transparent;
+    width: 100%;
+    border: none;
+    color: #fff;
+    float: left;
+    border-bottom: 1px solid #3d3d3d;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: Lato;
+    text-align: left;
+}
+
+.subscribe-form .button {
+    margin-top: 30px;
+}
+
+/*========================
+
+	12. Portfolio
+
+==========================*/
+#works {
+    position: relative;
+    background: #000;
+   padding: 0px 0px 0px 10px;!important
+}
+
+.portfolio-half {
+    padding-bottom: 150px;
+}
+
+.works-filter li {
+    margin-top: 30px;
+}
+
+.works-filter li:hover {
+    color: #fff;
+}
+
+.works-filter li a {
+    margin: 0px;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    line-height: 1.65;
+    color: #fff;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+.works-filter li a:hover {
+    text-decoration: line-through;
+    color: #777777;
+}
+
+.works-filter li a:focus {
+    text-decoration: line-through;
+    color: #777777;
+}
+
+.work li {
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+    overflow: hidden;
+}
+
+.work {
+    overflow: hidden;
+}
+
+.work li:hover {
+    opacity: 1;
+}
+
+.work img {
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+    overflow: hidden;
+    opacity: 0.8;
+    padding: 7px;
+}
+
+.work:hover img {
+    opacity: 1;
+}
+
+.hover .button {
+    margin: auto;
+}
+
+/*========================
+
+	13. Contact
+
+==========================*/
+#contact {
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+#contact form input,form textarea {
+    box-sizing: border-box;
+    padding-bottom: 5px;
+    margin-bottom: 30px;
+    transition: none;
+    background: transparent;
+    width: 100%;
+    border: none;
+    color: #fff;
+    float: left;
+    border-bottom: 1px solid #3d3d3d;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: Lato;
+    text-align: left;
+}
+
+#message {
+    height: 100px;
+}
+
+#contact-form {
+    text-align: left;
+}
+
+#contact-form p span {
+    display: block;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+#contact-form p {
+    margin-top: 15px;
+}
+
+#contact-form i {
+    margin-right: 5px;
+}
+
+#contact-form p {
+    float: right;
+}
+
+.contact-full {
+    margin-top: 100px;
+}
+
+.contact-info li {
+    margin-top: 30px;
+    margin-right: 30px;
+    display: inline;
+    float: left;
+}
+
+.contact-info h4 {
+    letter-spacing: 2px;
+    margin: 15px 0px;
+}
+
+#contact-form label {
+    cursor: text;
+    display: block;
+    margin: 0;
+    position: relative;
+    top: 0;
+    width: 100%;
+}
+
+::-webkit-input-placeholder {
+    color: #c2c2c2;
+}
+
+:-moz-placeholder {
+    /* Firefox 18- */
+    color: #c2c2c2;
+}
+
+::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #c2c2c2;
+}
+
+:-ms-input-placeholder {
+    color: #c2c2c2;
+}
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #c2c2c2 !important;
+    opacity: 1;
+    /* Firefox */
+}
+
+#contact-form .error {
+    bottom: 12px;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: normal;
+    left: auto;
+    letter-spacing: 0;
+    position: absolute;
+    right: 20px;
+    text-transform: capitalize;
+    width: auto;
+}
+
+.response h3 {
+    letter-spacing: 2px;
+    margin: 30px 0 30px;
+    text-transform: uppercase;
+}
+
+.social-link {
+    margin: 0px;
+    padding: 0px;
+}
+
+.social-link i {
+    width: 100%;
+    height: 250px;
+    line-height: 250px;
+    color: #fff;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+.social-link i:hover {
+    background: #000;
+}
+
+/*========================
+
+	14. Map
+
+==========================*/
+#map_canvas {
+    height: 500px;
+    width: 100%;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+.map-marker {
+    padding: 30px;
+}
+
+/*========================
+
+	15. Footer
+
+==========================*/
+#footer {
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.logo-footer img {
+    width: 40px;
+}
+
+/*========================
+
+	16. Responsive
+
+==========================*/
+/* Resolutions Under 1350px
+----------------------------*/
+@media all and (max-width: 1350px) {
+    .styled div {
+        margin: 30px 15px 0px 15px;
+    }
+
+    .section-content {
+        padding: 0px 50px 0px 50px;
+        z-index: 9999;
+    }
+
+    .about-description {
+        padding: 50px 0px 50px 0px;
+    }
+}
+
+/* Resolutions Under 1050px
+----------------------------*/
+@media all and (max-width: 1050px) {
+    .styled div {
+        font-size: 1.5em;
+    }
+
+    .title {
+        display: block;
+        font-size: 2em;
+    }
+}
+
+/* Resolutions Under 992px
+----------------------------*/
+@media all and (max-width: 992px) {
+    .section-content {
+        padding: 0px 10% 0px 10%;
+        z-index: 9999;
+    }
+
+    .button {
+        margin-left: auto !important;
+        margin-right: auto !important;
+        float: none !important;
+    }
+
+    .separator-small {
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .rslides {
+        height: auto;
+    }
+
+    .service {
+        text-align: center;
+        padding-bottom: 30px;
+    }
+
+    .service i {
+        margin-top: 0px;
+        width: 100%;
+        line-height: 1;
+    }
+
+    .service h2, .about-description h2, #subscribe h2, #contact h2 {
+        margin-left: 0px;
+        max-width: 100%;
+        text-align: center !important;
+        float: none !important;
+    }
+
+    .service p {
+        margin-top: 0px;
+        float: none !important;
+        text-align: center !important;
+        width: 100%;
+    }
+
+    #home .rslides img {
+        min-width: 1150px;
+        height: 100vh;
+    }
+
+    .about-description p {
+        text-align: center !important;
+        width: 100%;
+    }
+
+    .about-quote {
+        text-align: center !important;
+        width: 100%;
+    }
+
+    .works-filter li {
+        text-align: center !important;
+        width: 100% !important;
+    }
+
+    .form-control {
+        text-align: center !important;
+        max-width: 100% !important;
+    }
+
+    .contact-info, form textarea, #contact form input {
+        text-align: center !important;
+    }
+
+    .contact-info li {
+        margin-top: 30px;
+        display: block;
+        float: none;
+        margin-right: 0px;
+    }
+
+    #contact-form {
+        text-align: center !important;
+    }
+
+    .navbar-brand {
+        display: none;
+    }
+
+    .nav li a {
+        margin-right: 0px;
+    }
+
+    .about-description {
+        padding: 150px 10% 150px 10%;
+    }
+
+    .subscribe-form .button {
+        margin-top: 30px;
+    }
+
+    .contact-info {
+        margin-top: 30px;
+        margin-bottom: 150px;
+    }
+}
+
+/* Resolutions Under 768px
+----------------------------*/
+@media all and (max-width: 768px) {
+    .nav {
+        float: left;
+    }
+
+    .navbar-collapse {
+        position: absolute;
+        left: 0px;
+        background: #111111;
+        text-align: left;
+        width: 100%;
+        z-index: 99999999;
+    }
+
+    .navbar-brand {
+        display: inline;
+    }
+
+    .nav li a {
+        margin-right: 10px;
+    }
+
+    .navigation {
+        z-index: 9;
+        -webkit-box-shadow: 0px 4px 10px -3px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 4px 10px -3px rgba(0,0,0,0.75);
+        box-shadow: 0px 4px 10px -3px rgba(0,0,0,0.75);
+    }
+
+    .contact-info {
+        margin-top: 30px;
+        margin-bottom: 150px;
+    }
+}
+
+/* Resolutions Under 745px
+----------------------------*/
+@media all and (max-width: 745px) {
+    .styled div {
+        font-size: 1.5em;
+    }
+}
+
+/* Resolution Under 570px
+----------------------------*/
+@media all and (max-width: 570px) {
+    .styled {
+        margin: 0px;
+        width: 100%;
+    }
+
+    .styled div {
+        display: inline-block;
+        margin: 30px 5px 0px 5px;
+        font-size: 1em;
+        font-weight: 900;
+        max-width: 100%;
+    }
+
+    .styled div span {
+        display: block;
+        font-size: 12px;
+        font-weight: 400;
+        text-align: center;
+        color: #777777;
+        text-transform: capitalize;
+        margin-right: 0px;
+    }
+    .no-padding {
+    padding: 0px 0px 0px 0px  !important;
+}
+    .sponser{
+    padding: 34px 2px 10px 66px  !important;
+}
+}
+
+/* Resolution Under 530px
+----------------------------*/
+@media all and (max-width: 530px) {
+    .loader-img img {
+        display: block;
+    }
+
+    .title {
+        font-size: 1em !important;
+        max-width: 100%;
+        margin: auto;
+        margin-top: 5px;
+    }
+
+    #map_canvas {
+        height: 300px;
+    }
+
+    .brand {
+        font-size: 3em !important;
+    }
+
+    .f-large {
+        font-size: 2.0em;
+    }
+     .no-padding {
+    padding: 0px 0px 0px 0px  !important;
+}
+
+/* Resolution Under 450px
+----------------------------*/
+@media all and (max-width: 450px) {
+    .loader-img {
+        display: none;
+    }
+
+    #map_canvas {
+        height: 275px;
+    }
+
+    #contact-form p {
+        float: left;
+        margin-top: 20px;
+    }
+
+    .blog-post ul li {
+        margin: 0px 0px 20px 0px;
+    }
+
+    .post-info .no-margin {
+        margin: 0px 0px 20px 0px !important;
+    }
+
+    .post-info .no-padding {
+        padding-left: 20px !important;
+    }
+
+    .post-info .no-border {
+        border-left: 1px solid #b2b2b2 !important;
+    }
+     .no-padding {
+    padding: 50px 0px 50px 0px  !important;
+}
